@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import Second from '../Second';
+import Feed from './../Feed';
 
-describe('Second component', () => {
+describe('Feed component', () => {
   let props = {};
 
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe('Second component', () => {
   });
 
   test('renders correctly', () => {
-    const component = shallow(<Second {...props} />);
+    const component = shallow(<Feed {...props} />);
 
     expect(component).toMatchSnapshot();
   });

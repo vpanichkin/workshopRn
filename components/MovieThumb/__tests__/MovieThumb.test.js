@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { shallow } from 'enzyme';
-import Feed from '../Feed';
+import MovieThumb from '../MovieThumb';
 
-describe('Feed component', () => {
+describe('MovieThumb component', () => {
   let props = {};
 
   beforeEach(() => {
@@ -11,7 +11,7 @@ describe('Feed component', () => {
   });
 
   test('renders correctly', () => {
-    const component = shallow(<Feed {...props} />);
+    const component = shallow(<MovieThumb {...props} />);
 
     expect(component).toMatchSnapshot();
   });

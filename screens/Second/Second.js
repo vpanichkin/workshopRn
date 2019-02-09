@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-import sharedStyle from '../../shared/styles';
+import sharedStyle from './../../shared/style';
 import style from './style';
 
 type Props = {};
