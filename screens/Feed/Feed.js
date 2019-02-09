@@ -36,7 +36,7 @@ class Feed extends Component<Props, State> {
     const { loading, data } = this.state;
 
     return (
-      <SafeAreaView style={sharedStyle.container}>
+      <View>
         {!data && !loading && (
           <TouchableOpacity
             onPress={this.onButtonPress}
@@ -45,8 +45,8 @@ class Feed extends Component<Props, State> {
             <Text style={style.buttonLabel}>Find Stuff</Text>
           </TouchableOpacity>
         )}
-        <MoviesList loading={loading} data={data} />
-      </SafeAreaView>
+        <MoviesList loading={loading} data={data} style={{flex:1}}/>
+      </View>
     );
   }
 }

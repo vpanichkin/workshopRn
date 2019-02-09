@@ -2,7 +2,7 @@ import axios from 'axios';
 import { AsyncStorage } from 'react-native';
 
 const apikey = '2f3933e4';
-const endpoint = `http://www.omdbapi.com/?apikey=${apikey}&s=*apple*&p=1`;
+const endpoint = `http://www.omdbapi.com/?apikey=${apikey}&s=*apple*`;
 const fakeTimeout = 500;
 
 const fetchMovies = async () => {
